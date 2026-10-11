@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="YADAV BROTHER'S ENTERPRISES - Motorbike repair, servicing and spare parts in Pipra Bazar, Rautahat, Nepal.">
+  <title>YADAV BROTHER'S ENTERPRISES | Motorbike Workshop</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #202735;
+      background: #f5f7fa;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .brand {
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 1.3;
+    }
+
+    .brand span {
+      display: block;
+      color: #fbbf24;
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin-top: 5px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #fbbf24;
+    }
+
+    .hero {
+      padding: 85px 7%;
+      color: white;
+      text-align: center;
+      background: linear-gradient(135deg, #111827, #263b59, #b45309);
+    }
+
+    .hero .tag {
+      color: #fbbf24;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 55px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #fbbf24;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 28px;
+      color: #e5e7eb;
+      font-size: 17px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #fbbf24;
+      color: #111827;
+      padding: 13px 22px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .button:hover {
+      background: #f59e0b;
+    }
+
+    .button-outline {
+      border: 1px solid white;
+      color: white;
+      background: transparent;
+    }
+
+    .button-outline:hover {
+      background: white;
+      color: #111827;
+    }
+
+    section {
+      padding: 60px 7%;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+      font-size: 30px;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .section-heading p {
+      color: #667085;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+    }
+
+    .card .emoji {
+      font-size: 35px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #667085;
+      font-size: 14px;
+    }
+
+    .about {
+      background: white;
+    }
+
+    .about-content {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-content p {
+      color: #596273;
+      margin-bottom: 14px;
+    }
+
+    .highlight {
+      background: #111827;
+      color: white;
+      border-radius: 12px;
+      padding: 30px;
+      margin-top: 28px;
+    }
+
+    .highlight h3 {
+      color: #fbbf24;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background: #eef2f7;
+    }
+
+    .contact-box {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      border: 1px solid #e5e7eb;
+    }
+
+    .contact-box p {
+      margin: 12px 0;
+    }
+
+    .contact-box strong {
+      color: #111827;
+    }
+
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      text-align: center;
+      padding: 22px 7%;
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: #fbbf24;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero {
+        padding: 60px 6%;
+      }
+
+      section {
+        padding: 45px 6%;
+      }
+
+      .section-heading h2 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">
+      YADAV BROTHER'S ENTERPRISES
+      <span>MOTORBIKE WORKSHOP & SPARE PARTS</span>
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#parts">Spare Parts</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="tag">YOUR LOCAL MOTORBIKE EXPERTS</div>
+
+      <h1>Keep Your Bike<br><span>Running Smoothly.</span></h1>
+
+      <p>
+        Welcome to YADAV BROTHER'S ENTERPRISES in Pipra Bazar,
+        Rautahat, Nepal. We provide motorbike repair, servicing
+        and spare-parts support for your everyday rides.
+      </p>
+
+      <a class="button" href="#services">Explore Our Services</a>
+      <a class="button button-outline" href="#contact">Find Our Workshop</a>
+    </section>
+
+    <section id="services">
+      <div class="section-heading">
+        <h2>Our Workshop Services</h2>
+        <p>Practical care for your motorbike, all in one place.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">🔧</div>
+          <h3>Bike Repair</h3>
+          <p>Repair assistance for common motorbike problems and mechanical issues.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">🛠️</div>
+          <h3>General Servicing</h3>
+          <p>Routine maintenance to help keep your bike in good working condition.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">🛞</div>
+          <h3>Parts Replacement</h3>
+          <p>Support with replacing worn or damaged motorbike components.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">⚙️</div>
+          <h3>Maintenance Support</h3>
+          <p>Help with checking bike components and identifying maintenance needs.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="parts">
+      <div class="section-heading">
+        <h2>Motorbike Spare Parts</h2>
+        <p>Ask us about availability and prices before visiting.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">🛢️</div>
+          <h3>Engine Oil</h3>
+          <p>Ask about available engine oils suitable for your bike.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">🔋</div>
+          <h3>Batteries & Electrical</h3>
+          <p>Ask about available batteries, bulbs and electrical components.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">⛓️</div>
+          <h3>Chains & Cables</h3>
+          <p>Ask about chains, cables and related replacement parts.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">🔩</div>
+          <h3>General Spare Parts</h3>
+          <p>Contact us to check stock, compatibility and current prices.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-content">
+        <div class="section-heading">
+          <h2>About Our Business</h2>
+          <p>Your local workshop in Pipra Bazar, Rautahat.</p>
+        </div>
+
+        <p>
+          YADAV BROTHER'S ENTERPRISES serves motorbike owners
+          with workshop services and spare-parts assistance.
+          Our aim is to make bike maintenance more convenient
+          for customers in our local community.
+        </p>
+
+        <p>
+          Have a repair question or need a particular part?
+          Get in touch to ask about availability and service options.
+        </p>
+
+        <div class="highlight">
+          <h3>Why Visit Us?</h3>
+          <p>
+            Local service • Repair support • Spare-parts enquiries •
+            Friendly customer service
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-heading">
+        <h2>Visit or Contact Us</h2>
+        <p>We look forward to helping with your motorbike needs.</p>
+      </div>
+
+      <div class="contact-box">
+        <p><strong>Business:</strong><br>YADAV BROTHER'S ENTERPRISES</p>
+
+        <p><strong>Location:</strong><br>Pipra Bazar, Rautahat, Nepal</p>
+
+        
+<p><strong>Phone:</strong></p>
+<p>
+  <a href="tel:+9779822267627">+977 9822267627</a><br>
+  <a href="tel:+9779864527200">+977 9864527200</a>
+</p>
+
+        <p><strong>Opening Hours:</strong><br>
+          Our shop opens from 6AM to 8PM.
+        </p>
+
+        <a class="button" href="https://www.google.com/maps/search/?api=1&query=Pipra+Bazar+Rautahat+Nepal" target="_blank" rel="noopener noreferrer">
+          Find Pipra Bazar on Maps
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="year"></span>
+      <strong>YADAV BROTHER'S ENTERPRISES</strong>.
+      All rights reserved.
+    </p>
+    <p>Motorbike Workshop & Spare Parts | Pipra Bazar, Rautahat, Nepal</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
